@@ -6,12 +6,15 @@ var webpack                         = require('webpack'),
     _                               = require('lodash'),
     BrowserSyncPlugin = require('browser-sync-webpack-plugin');
 
-var packageJson = require(__dirname + '/package.json');
+var packageJson = require(__dirname + '/package.json')
+
 var app = {
     name:packageJson.name[0].toUpperCase() + packageJson.name.slice(1),
     path:path.join(__dirname,'app'),
-    globalStylePath:path.join(__dirname,'style')
+    globalStylePath:path.join(__dirname,'style'),
+    projectPath:__dirname
 };
+
 module.exports = {
     entry:{
         ['js/'+packageJson.name]:'./app/app.js',
@@ -25,6 +28,7 @@ module.exports = {
     },
     resolve:{
         alias:{
+            _project:app.projectPath,
             _app:app.path,
             _interfaces:path.join(__dirname,'app','interfaces'),
             _models:path.join(__dirname,'app','models'),
@@ -94,15 +98,15 @@ module.exports = {
             filename: path.join(__dirname, 'README.md'),
             template: path.join(__dirname,'templates', 'README.md.ejs')
         }),
-        new HtmlPlugin({
-            info:{
-                name: packageJson.name
-            },
-            title: app.name,
-            inject: false,
-            filename: path.join(__dirname, 'index.js'),
-            template: path.join(__dirname, 'templates', 'index.js.ejs')
-        }),
+        // new HtmlPlugin({
+        //     info:{
+        //         name: packageJson.name
+        //     },
+        //     title: app.name,
+        //     inject: false,
+        //     filename: path.join(__dirname, 'index.js'),
+        //     template: path.join(__dirname, 'templates', 'index.js.ejs')
+        // }),
         new ExtractTextPlugin('[name].css'),
         new BrowserSyncPlugin({
             // browse to http://localhost:3000/ during development,

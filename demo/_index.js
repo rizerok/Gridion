@@ -1,5 +1,5 @@
 //require('_app/index.js');
-import Gridion from '_components/gridion/component.cls';
+import Gridion from '_project/index';
 window.grid = new Gridion('.container',6);
 
 console.time(1234);

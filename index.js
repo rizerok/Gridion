@@ -1,2 +1,2 @@
-require('./bundle/js/gridion.js');
-//module.exports = overflowTracking;
+import Gridion from '_app/app';
+export default Gridion;

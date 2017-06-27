@@ -51,7 +51,7 @@
 	});
 	exports.Gridion = undefined;
 
-	var _component = __webpack_require__(4);
+	var _component = __webpack_require__(5);
 
 	var _component2 = _interopRequireDefault(_component);
 
@@ -63,7 +63,8 @@
 /* 1 */,
 /* 2 */,
 /* 3 */,
-/* 4 */
+/* 4 */,
+/* 5 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -74,19 +75,19 @@
 
 	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
-	var _transitoins = __webpack_require__(5);
+	var _transitoins = __webpack_require__(6);
 
 	var _transitoins2 = _interopRequireDefault(_transitoins);
 
-	var _aTools = __webpack_require__(6);
+	var _aTools = __webpack_require__(7);
 
 	var _aTools2 = _interopRequireDefault(_aTools);
 
-	var _view = __webpack_require__(10);
+	var _view = __webpack_require__(11);
 
 	var _view2 = _interopRequireDefault(_view);
 
-	var _model = __webpack_require__(15);
+	var _model = __webpack_require__(16);
 
 	var _model2 = _interopRequireDefault(_model);
 
@@ -207,7 +208,7 @@
 	exports.default = Gridion;
 
 /***/ },
-/* 5 */
+/* 6 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -216,7 +217,7 @@
 	    value: true
 	});
 
-	var _aTools = __webpack_require__(6);
+	var _aTools = __webpack_require__(7);
 
 	var _aTools2 = _interopRequireDefault(_aTools);
 
@@ -414,7 +415,7 @@
 	};
 
 /***/ },
-/* 6 */
+/* 7 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -425,15 +426,15 @@
 
 	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
-	var _animation = __webpack_require__(7);
+	var _animation = __webpack_require__(8);
 
 	var _animation2 = _interopRequireDefault(_animation);
 
-	var _transition = __webpack_require__(8);
+	var _transition = __webpack_require__(9);
 
 	var _transition2 = _interopRequireDefault(_transition);
 
-	var _teOnce = __webpack_require__(9);
+	var _teOnce = __webpack_require__(10);
 
 	var _teOnce2 = _interopRequireDefault(_teOnce);
 
@@ -470,7 +471,7 @@
 	exports.default = ATools;
 
 /***/ },
-/* 7 */
+/* 8 */
 /***/ function(module, exports) {
 
 	"use strict";
@@ -513,7 +514,7 @@
 	exports.default = Animation;
 
 /***/ },
-/* 8 */
+/* 9 */
 /***/ function(module, exports) {
 
 	"use strict";
@@ -560,7 +561,7 @@
 	exports.default = Transitions;
 
 /***/ },
-/* 9 */
+/* 10 */
 /***/ function(module, exports) {
 
 	'use strict';
@@ -579,7 +580,7 @@
 	}
 
 /***/ },
-/* 10 */
+/* 11 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -590,13 +591,13 @@
 
 	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
-	__webpack_require__(11);
+	__webpack_require__(12);
 
-	var _grid = __webpack_require__(13);
+	var _grid = __webpack_require__(14);
 
 	var _grid2 = _interopRequireDefault(_grid);
 
-	var _abstractView = __webpack_require__(14);
+	var _abstractView = __webpack_require__(15);
 
 	var _abstractView2 = _interopRequireDefault(_abstractView);
 
@@ -648,14 +649,14 @@
 	exports.default = View;
 
 /***/ },
-/* 11 */
+/* 12 */
 /***/ function(module, exports) {
 
 	// removed by extract-text-webpack-plugin
 
 /***/ },
-/* 12 */,
-/* 13 */
+/* 13 */,
+/* 14 */
 /***/ function(module, exports) {
 
 	"use strict";
@@ -669,7 +670,7 @@
 	};
 
 /***/ },
-/* 14 */
+/* 15 */
 /***/ function(module, exports) {
 
 	'use strict';
@@ -718,7 +719,7 @@
 	exports.default = AbstractView;
 
 /***/ },
-/* 15 */
+/* 16 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -729,11 +730,11 @@
 
 	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
-	var _component = __webpack_require__(16);
+	var _component = __webpack_require__(17);
 
 	var _component2 = _interopRequireDefault(_component);
 
-	var _model = __webpack_require__(21);
+	var _model = __webpack_require__(22);
 
 	var _model2 = _interopRequireDefault(_model);
 
@@ -876,7 +877,7 @@
 	exports.default = Model;
 
 /***/ },
-/* 16 */
+/* 17 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -887,11 +888,11 @@
 
 	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
-	var _view = __webpack_require__(17);
+	var _view = __webpack_require__(18);
 
 	var _view2 = _interopRequireDefault(_view);
 
-	var _model = __webpack_require__(20);
+	var _model = __webpack_require__(21);
 
 	var _model2 = _interopRequireDefault(_model);
 
@@ -941,7 +942,7 @@
 	exports.default = Cell;
 
 /***/ },
-/* 17 */
+/* 18 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -952,15 +953,15 @@
 
 	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
-	var _cell = __webpack_require__(18);
+	var _cell = __webpack_require__(19);
 
 	var _cell2 = _interopRequireDefault(_cell);
 
-	var _abstractView = __webpack_require__(14);
+	var _abstractView = __webpack_require__(15);
 
 	var _abstractView2 = _interopRequireDefault(_abstractView);
 
-	var _cssTransforms = __webpack_require__(19);
+	var _cssTransforms = __webpack_require__(20);
 
 	var _cssTransforms2 = _interopRequireDefault(_cssTransforms);
 
@@ -1023,7 +1024,7 @@
 	exports.default = View;
 
 /***/ },
-/* 18 */
+/* 19 */
 /***/ function(module, exports) {
 
 	"use strict";
@@ -1037,7 +1038,7 @@
 	};
 
 /***/ },
-/* 19 */
+/* 20 */
 /***/ function(module, exports) {
 
 	'use strict';
@@ -1142,7 +1143,7 @@
 	exports.default = CssTransforms;
 
 /***/ },
-/* 20 */
+/* 21 */
 /***/ function(module, exports) {
 
 	"use strict";
@@ -1199,7 +1200,7 @@
 	exports.default = Cell;
 
 /***/ },
-/* 21 */
+/* 22 */
 /***/ function(module, exports) {
 
 	"use strict";
