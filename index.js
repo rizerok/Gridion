@@ -1,2 +1,1 @@
-import Gridion from '_app/app';
-export default Gridion;
+module.exports = require('./bundle/js/gridion.js');
