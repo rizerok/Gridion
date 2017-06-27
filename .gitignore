@@ -1,0 +1,3 @@
+# project dirs
+/node_modules/**
+.idea/

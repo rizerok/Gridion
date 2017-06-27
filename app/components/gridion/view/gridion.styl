@@ -1,0 +1,19 @@
+.gridion
+	position:relative;
+	display:block
+	background-color:#222;
+	//transition:height .5s;
+	&__cell
+		position:absolute;
+		transition:transform .5s;
+		background-color:#cc3;
+		border:2px solid #bb1;
+		&.is-scaling
+			transform-origin:center;
+			transition:transform .35s;
+		&.is-sizing
+			transition:height .35s, width .35s;
+		&.is-fading
+			transition:opacity .35s
+		&.is-fade
+			opacity:0;
