@@ -1,3 +1,8 @@
-# project dirs
-/node_modules/**
+node_modules/**
 .idea/
+.DS_Store
+
+dev/compiled
+
+demo/handled/demo1/compiled
+demo/handled/demo2/compiled

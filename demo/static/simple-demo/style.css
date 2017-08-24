@@ -1,0 +1,15 @@
+*{
+	box-sizing:border-box;
+}
+body{
+	font-family:arial;
+}
+.gridion__cell{
+	background:#29298e;
+	border:2px solid #19194a;
+	display:flex;
+	align-items:center;
+	justify-content:center;
+	font-size:60px;
+	color:#fff;
+}

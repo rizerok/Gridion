@@ -1,0 +1,19 @@
+//layout
+.gridion
+	position:relative;
+	display:block
+	*
+		box-sizing:border-box;
+	&__cell
+		$anim-drt = .35s;
+		position:absolute;
+		transition:transform .5s;
+		&.is-scaling
+			transform-origin:center;
+			transition:transform $anim-drt;
+		&.is-sizing
+			transition:height $anim-drt, width $anim-drt;
+		&.is-fading
+			transition:opacity $anim-drt;
+		&.is-fade
+			opacity:0;

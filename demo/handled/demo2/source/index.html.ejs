@@ -1,0 +1,22 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title><%= htmlWebpackPlugin.options.title %></title>
+    <% for (let key in htmlWebpackPlugin.files.css) {
+    if(htmlWebpackPlugin.files.css[key].indexOf(htmlWebpackPlugin.options.title)!==-1){ %>
+    <link rel="stylesheet" href="<%= htmlWebpackPlugin.files.css[key] %>"><% }} %>
+</head>
+<body>
+
+<div class="container">
+
+</div>
+<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/dat-gui/0.6.5/dat.gui.min.js"></script> -->
+<script src="/demo1/source/dat.gui.min.js"></script>
+<% for (let key in htmlWebpackPlugin.files.js) {
+    if(htmlWebpackPlugin.files.js[key].indexOf(htmlWebpackPlugin.options.title)!==-1){
+%>
+<script src="<%= htmlWebpackPlugin.files.js[key] %>"></script><% }} %>
+</body>
+</html>

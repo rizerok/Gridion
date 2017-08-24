@@ -1,10 +1,16 @@
 {
   "name": "gridion",
-  "version": "0.0.2",
-  "description": "",
-  "main": "index.js",
+  "version": "0.0.3",
+  "description": "A small self-adjusting js grid.",
+  "main": "dist/gridion.js",
+  "module": "source/lib/gridion.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build:dev": "webpack --progress --env=dev",
+    "build:lib": "webpack --progress --env=lib",
+    "build:demo": "webpack --progress --env=demo",
+    "build:prod": "webpack --progress --env=prod",
+    "watch:dev": "webpack-dev-server --env=dev --progress",
+    "watch:demo": "webpack-dev-server --env=demo --progress"
   },
   "repository": {
     "type": "git",
@@ -17,24 +23,28 @@
   ],
   "author": "alex",
   "license": "ISC",
-  "dependencies": {},
   "devDependencies": {
-    "autoprefixer": "^6.6.0",
-    "autoprefixer-loader": "^3.2.0",
-    "babel-core": "^6.21.0",
-    "babel-loader": "^6.2.10",
-    "babel-preset-es2015": "^6.18.0",
-    "browser-sync": "^2.18.5",
-    "browser-sync-webpack-plugin": "^1.1.3",
-    "css-loader": "^0.26.1",
-    "extract-text-webpack-plugin": "^1.0.1",
-    "html-loader": "^0.4.4",
-    "html-webpack-plugin": "^2.28.0",
-    "lodash": "^4.17.4",
-    "style-loader": "^0.13.1",
+    "babel-core": "^6.25.0",
+    "babel-eslint": "^7.2.3",
+    "babel-loader": "^7.1.1",
+    "babel-preset-env": "^1.6.0",
+    "clean-webpack-plugin": "^0.1.16",
+    "css-loader": "^0.28.4",
+    "eslint": "^4.4.1",
+    "eslint-loader": "^1.9.0",
+    "extract-text-webpack-plugin": "^3.0.0",
+    "html-webpack-harddisk-plugin": "^0.1.0",
+    "html-webpack-plugin": "^2.30.1",
+    "postcss-loader": "^2.0.6",
+    "style-loader": "^0.18.2",
     "stylus": "^0.54.5",
-    "stylus-loader": "^2.4.0",
-    "url-loader": "^0.5.7",
-    "webpack": "^1.14.0"
-  }
+    "stylus-loader": "^3.0.1",
+    "webpack": "^3.4.1",
+    "webpack-dev-server": "^2.6.1",
+    "webpack-merge": "^4.1.0"
+  },
+  "browserslist": [
+    "> 3%"
+  ],
+  "dependencies": {}
 }

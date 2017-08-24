@@ -1,0 +1,7 @@
+node_modules/**
+.idea/
+.DS_Store
+
+dev/compiled
+<% htmlWebpackPlugin.options.demo.forEach(name=>{ %>
+<%= `demo/handled/${name}/compiled` %><% }); %>
