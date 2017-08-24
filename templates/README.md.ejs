@@ -17,8 +17,8 @@ let grid = new Gridion('.container',6);
 Or use cdn:
 -------------------
 ```html
-<link rel="stylesheet" href="url">
-<script src="url"></script>
+<link rel="stylesheet" href="https://cdn.rawgit.com/rizerok/Gridion/v0.0.3/dist/gridion.css">
+<script src="https://cdn.rawgit.com/rizerok/Gridion/v0.0.3/dist/gridion.js"></script>
 ```
 ```javascript
 let grid = new Gridion('.container',6);
@@ -26,14 +26,11 @@ let grid = new Gridion('.container',6);
 
 Demo:
 -------------------
-Simple demo
-url
+[Simple demo](https://codepen.io/rizer/pen/GvBdOJ)
 
-Demo1
-url
+[Demo1](https://codepen.io/rizer/pen/yoqjRv)
 
-Demo2 (Infinity gallery)
-url
+[Demo2 (Infinity gallery)](https://codepen.io/rizer/pen/ZJjowj)
 
 Usage:
 -------------------
