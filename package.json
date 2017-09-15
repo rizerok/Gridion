@@ -3,7 +3,7 @@
   "version": "0.0.3",
   "description": "A small self-adjusting js grid.",
   "main": "dist/gridion.js",
-  "module": "source/lib/gridion.js",
+  "module": "source/lib/lib.js",
   "scripts": {
     "build:dev": "webpack --progress --env=dev",
     "build:lib": "webpack --progress --env=lib",
